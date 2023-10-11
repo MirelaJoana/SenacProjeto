@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./estilos/reset.css">
+  <link rel="stylesheet" href="./estilos/style.css">
+  <title>Localização</title>
+</head>
+<body>
+  <nav class="navegacao">
+    <ul class="navegacao__menu">
+      <li class="navegacao__menu-logo"><a href="#"><img src="./img/senac-logo-sem-fundo.webp" alt="Logo Senac"></a></li>
+      <li class="navegacao__menu-link"><a href="#"><img class="navegacao__img-icon" src="./img/box.png">Produto</a></li>
+      <li class="navegacao__menu-link"><a href="./lote.html"><img class="navegacao__img-icon" src="./img/product.png">Lote</a></li>
+      <li class="navegacao__menu-link"><a href="#"><img class="navegacao__img-icon" src="./img/pin.png">Localização</a></li>
+      <li class="navegacao__menu-link"><a href="#"><img class="navegacao__img-icon" src="./img/ruler2.png">Unidade de medida</a></li>
+      <li class="navegacao__menu-link"><a href="#"><img class="navegacao__img-icon" src="./img/user.png">Minha área </a></li>
+    </ul>
+  </nav>
+  <main class="container">
+    <div class="container__lote">
+      <div class="titulo"><h1>Localização</h1></div>
+      <div class="container__lote-conteudo">
+      <label for="name">Usuário:</label>
+      <input type="text" id="Usuario" name="Usuario" required>
+
+      <label for="container__lote-salas">Sala:</label>
+      <select class="container__lote-salas">
+        <option value="valor1" selected>Selecione</option>
+        <option value="valor2">Sala 10</option>
+        <option value="valor3">Sala 11</option>
+        <option value="valor3">Sala 12</option>
+        <option value="valor3">Sala 13</option>
+        <option value="valor3">Sala 14</option>
+      </select>
+      
+      <form class="container__formulario-estantes">
+        <p>Estante: </p>
+        <label><input name="estante" type="radio" value="estante a" checked>Estante A</label>
+        <label><input name="estante" type="radio" value="estante b">Estante B</label><br>
+        <label><input name="estante" type="radio" value="estante c">Estante C</label>
+        <label><input name="estante" type="radio" value="estante d">Estante D</label><br>
+        <label><input name="estante" type="radio" value="estante e">Estante E</label>
+        <label><input name="estante" type="radio" value="estante f">Estante F</label>
+      </form>
+
+      <label for="select">Prateleira: </label>
+      <select class="container__lote-prateleiras">
+        <option value="valor1" selected>Selecione</option>
+        <option value="valor2">100</option>
+        <option value="valor3">101</option>
+        <option value="valor3">102</option>
+        <option value="valor3">103</option>
+        <option value="valor3">104</option>
+        <option value="valor3">105</option>
+      </select>
+
+      <form class="container__formulario-status">
+        <p>Status:</p>
+        <label><input name="status localizacao" type="radio" value="status localizacao" checked>Localizado</label>
+        <label><input name="status localizacao" type="radio" value="status localizacao" checked>Não localizado</label>
+      </form>
+
+      
+      <a class="btn" href="#">Enviar</a>
+
+      </div>
+    </div>
+  </main>
+</body>
+</html>
